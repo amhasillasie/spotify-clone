@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext } from 'react'
 import Navbar from './Navbar'
 import { useParams } from 'react-router-dom'
@@ -58,4 +59,29 @@ const DisplayAlbum = () =>{
 }
 
 
+=======
+import React from 'react'
+import Navbar from './Navbar'
+import { useParams } from 'react-router-dom'
+import { albumsData } from '../assets/assets';
+
+const DisplayAlbum = () =>{
+
+      const {id} = useParams();
+      const albumData = albumsData[id];
+     console.log(albumData);
+
+    return(
+      
+        <>
+      <Navbar />
+
+          
+           
+        </>
+    )
+}
+
+
+>>>>>>> ae60466884b57c1e4b1c7151759f1a21df253993
 export default DisplayAlbum

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useRef } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import DisplayHome from './DisplayHome'
@@ -34,4 +35,25 @@ const Display = () =>{
 }
 
 
+=======
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import DisplayHome from './DisplayHome'
+import DisplayAlbum from './DisplayAlbum'
+
+const Display = () =>{
+    return(
+        <div className='display'>
+          
+            <Routes>
+                <Route path='/' element={<DisplayHome/>}/>
+                <Route path='/album/:id' element={<DisplayAlbum/>}/>
+            </Routes>
+              
+        </div>
+    )
+}
+
+
+>>>>>>> ae60466884b57c1e4b1c7151759f1a21df253993
 export default Display
